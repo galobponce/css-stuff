@@ -1,0 +1,166 @@
+/* Normalize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Links rendering normal when hover */
+a {
+    color: #ffff;
+    text-decoration: none;
+}
+a:hover {
+    color: #58a6ff;
+    text-decoration: underline;
+}
+.link:hover {
+    cursor: pointer;
+    color: #58a6ff;
+    text-decoration: underline;
+}
+.link:hover path {
+    fill: #58a6ff;
+}
+.link--no-underline:hover {
+    text-decoration: none;
+}
+
+
+
+.app-container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0d1116;
+}
+
+
+/* Code Box Container */
+.code-container {
+    width: 56em;
+    max-width: 90vw;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    color: #ffff;
+
+    border-radius: .5em;
+    border: 1px solid #30363d;
+    background-color: #161b22;
+}
+
+
+
+/* Header stuff */
+.code-header {
+    width: 100%;
+
+    padding: 1em;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.code-header div:first-child {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: .5em;
+}
+
+.avatar-container {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    border-radius: 1em;
+}
+
+
+/* Commit info from header */
+.code-header__commit-info {
+    flex: 1 0 0;
+    margin: 0 .5em;
+    margin-right: 1em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.code-header div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .5em;
+}
+
+
+
+/* Content Stuff */
+.code-content {
+    width: 100%;
+    
+    border-radius: 0 0 .5em .5em;
+    background-color: #0d1116;
+}
+
+
+.code-item {
+    width: 100%;
+
+    padding: 1em;
+
+    display: flex;
+
+    border-top: 1px solid #30363d;
+}
+/* All child div's and span's from code item */
+.code-item > div, span {
+    flex: 1 1 0;
+}
+.code-item:hover {
+    background-color: #161b22;
+}
+
+
+/* Folder / File icon + name */
+.code-icon-title {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+
+/* x hours / days ago */
+.code-item--subitem--time {
+    text-align: right;
+}
+
+
+.text--commit-info {
+    color: #8b949e;
+    white-space: nowrap;
+}
+
+
+/* Showing on tablet / desktop */
+.code-item-title {
+    display: none;
+    white-space: nowrap;
+}
+@media (min-width: 800px) {
+    .code-item-title {
+        display: inline-block;
+    }
+}
