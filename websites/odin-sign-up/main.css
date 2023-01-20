@@ -119,6 +119,17 @@ img {
 /* Image & Logo Section */
 
 
+/* Rest Section */
+.rest {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End Rest Section */
 
 
 /* Text Section */
@@ -152,7 +163,7 @@ img {
     align-items: center;
     gap: 1em;
 
-    padding: 1em;
+    padding: 2em;
 
     background-color: #ffffff;
 
@@ -182,3 +193,50 @@ img {
 }
 
 /* End Helper Text Section */
+/*  */
+
+
+
+/* Tablets */
+@media (min-width: 800px) {
+    .app-container {
+        flex-flow: row nowrap;
+
+        max-height: 99vh;
+    }
+
+    .img-container {
+        height: 100vh;
+
+        flex: 2 2 0;
+    }
+
+    .title-container {
+        top: 25%;
+    }
+
+    .rest {
+        flex: 3 3 0;
+    }
+
+    .dummy-text-form-container {
+        gap: 1.5em;
+    }
+}
+
+
+/* Desktop */
+@media (min-width: 1000px) {
+    .form-container {
+        flex-flow: row wrap;
+    }
+
+    .form-title {
+        text-align: center;
+        width: 100%;
+    }
+
+    .input-container {
+        width: 45%;
+    }
+}
