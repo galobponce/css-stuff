@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Odin Sign Up</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+
+<body>
+
+    <div class='app-container'>
+
+        <div class='img-container'>
+            <img src='./images/photo.webp' alt='Nature Background'>
+
+            <div class='title-container'>
+                <div class='logo-container'>
+                    <img src='./images/logo.png' alt='The Odin Project Logo'>
+                </div>
+                <h1>ODIN</h1>
+            </div>
+        </div>
+
+        <div class='dummy-text-form-container'>
+
+            <span>
+                This is not a real online service!
+            </span>
+
+            <span>
+                Sign up now to get started.
+            </span>
+
+            <span>
+                You <i>know</i> you want to.
+            </span>
+
+            <form class='form-container' id='form'>
+                <h2 class='form-title'>Let's do this!</h2>
+                <div class='input-container'>
+                    <label for='first-name'>First Name</label>
+                    <input class='input' name='first-name' id='first-name' placeholder='Galo' type='text' required>
+                </div>
+                <div class='input-container'>
+                    <label for='last-name'>Last Name</label>
+                    <input class='input' name='last-name' id='last-name' placeholder='Bello' type='text' required>
+                </div>
+                <div class='input-container'>
+                    <label for='email'>Email</label>
+                    <input class='input' name='email' id='email' placeholder='gbbelloponce@gmail.com' type='email'
+                        required>
+                </div>
+                <div class='input-container'>
+                    <label for='number'>Phone Number</label>
+                    <input class='input' name='number' id='number' placeholder='11-2345-6789' type='number' required>
+                </div>
+                <div class='input-container'>
+                    <label for='password'>Password</label>
+                    <input class='input' name='password' id='password' type='password' required>
+                </div>
+                <div class='input-container'>
+                    <label for='confirm-password'>Confirm Password</label>
+                    <input class='input' name='confirm-password' id='confirm-password' type='password' required>
+                </div>
+            </form>
+
+        </div>
+
+        <button type='submit' form='form' class='button button--create'>
+            Create Account
+        </button>
+
+        <span class='helper-text'>
+            Already have an account? <a href="#" class='link'>Log In</a>
+        </span>
+
+    </div>
+
+</body>
+
+</html>
