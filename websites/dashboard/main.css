@@ -55,8 +55,8 @@ img {
 /* End General */
 
 .app-container {
-    width: 100vw;
     height: 100vh;
+    max-width: 100vw;
 
     display: grid;
     grid-template-rows: 10em auto;
@@ -224,22 +224,62 @@ img {
     grid-row: span 3;
     grid-column: 1;
 
-    padding: 0 1em;
-
+    padding: 1em;
+    
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
+    gap: 2em;
 
     background-color: #1a92d3;
+
+    fill: #feffff;
+    color: #feffff;
 }
 
 .app-aside svg {
-    height: 2em;
+    width: 2.3em;
+    height: 2.3em;
 }
 
 .title-logo-container {
-    
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.app-aside ul {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: .5em;
+}
+
+.app-aside ul li {
+    list-style: none;
+    text-decoration: none;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.app-aside ul li svg {
+    height: 1.5em;
+    width: 1.5em;
 }
 
 /* End Sidebar */
